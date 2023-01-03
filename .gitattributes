@@ -1,4 +1,4 @@
-*.md linguist-vendored
+* text=auto
 *.txt linguist-vendored
 *.html linguist-vendored
 CHANGELOG.md export-ignore
