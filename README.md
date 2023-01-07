@@ -6,7 +6,7 @@
 
 
 <p align="center">
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="500">
+  <!--<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="500">-->
 </p>
 
 
