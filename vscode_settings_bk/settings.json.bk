@@ -64,6 +64,7 @@
   "editor.fontLigatures": null,
   "liveSassCompile.settings.showOutputWindowOn": "Error",
   "liveSassCompile.settings.watchOnLaunch": true,
+  "liveSassCompile.settings.compileOnWatch": false,
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",
