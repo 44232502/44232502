@@ -1,0 +1,118 @@
+{
+    "editor.fontFamily": "MyricaM M, Consolas, Courier New, monospace",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.smoothScrolling": true,
+    "editor.minimap.enabled": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorWidth": 4, // カーソル幅
+    "editor.renderLineHighlight": "all",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.formatOnPaste": false,
+    "editor.mouseWheelScrollSensitivity": 5,
+    "editor.snippetSuggestions": "top",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "workbench.iconTheme": "zarp-icons",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.colorCustomizations": {
+        // "editor.selectionBackground": "#ff00dd2a",
+        "editor.selectionBackground": "#ff00dd70",
+        "editor.selectionHighlightBackground": "#ffffff1f",
+        "editor.lineHighlightBackground": "#ff00bf15",
+        "editor.findMatchHighlightBackground": "#5c0026",
+        "editor.findMatchBackground": "#834600",
+    },
+    "files.trimTrailingWhitespace": true,
+    "emmet.variables": {
+        "lang": "ja",
+    },
+    "extensions.autoUpdate": true,
+    "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+    "editor.formatOnType": true,
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "workbench.editor.untitled.hint": "hidden",
+    "terminal.integrated.tabs.enabled": true,
+    "bracket-pair-colorizer-2.scopeLineCSS": [
+
+        "borderStyle : solid",
+        "borderWidth : 1px",
+        "borderColor : {color}",
+        "opacity: 0.5"
+    ],
+// ステージされた変更がない場合はすべての変更をコミットします。
+"git.enableSmartCommit": true,
+// 自動フェッチが有効かどうか
+"git.autofetch": true,
+// Git リポジトリを同期する前に確認する
+"git.confirmSync": false,
+"editor.fontLigatures": null,
+// live sass compileの設定　コンパイルのルールを決定
+"liveSassCompile.settings.formats": [
+    {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "~/../css/"
+    },
+    {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "~/../css/"
+    }
+],
+"liveSassCompile.settings.autoprefix": [
+    "> 1% in JP",
+    "last 2 versions"
+],
+"scss-scan.customPaths": [],
+"[scss]": {
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+},
+"workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+},
+"notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+},
+"python.defaultInterpreterPath": "C:\\Program Files\\Python39\\python.exe",
+"python.formatting.autopep8Args": [
+    "–max-line-length=500"
+],
+"security.workspace.trust.untrustedFiles": "open",
+"liveServer.settings.donotShowInfoMsg": true,
+"liveSassCompile.settings.excludeList": [
+
+    "**/node_modules/**",
+    ".vscode/**"
+],
+"files.associations": {
+    "": ""
+},
+"window.zoomLevel": -1,
+"workbench.list.smoothScrolling": true,
+"editor.hover.delay": 2000,
+"files.autoGuessEncoding": true,
+"editor.inlineSuggest.enabled": true,
+"workbench.productIconTheme": "fluent-icons",
+"settingsSync.ignoredExtensions": [],
+"editor.mouseWheelZoom": true,
+"workbench.colorTheme": "Cyberpunk",
+"gitlens.blame.format": "${author}　${date}　${message|50?} ",
+"gitlens.graph.dateFormat": null,
+"gitlens.defaultDateFormat": "YYYY/MM/DD HH:mm:ss",
+"gitlens.defaultDateShortFormat": null,
+"gitlens.defaultTimeFormat": "HH:mm:ss",
+"gitlens.currentLine.format": "${💬author}${「message|50?」}${    ⏰ date}",
+"gitlens.views.commitDetails.files.layout": "tree",
+
+}
