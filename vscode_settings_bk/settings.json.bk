@@ -62,6 +62,8 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "editor.fontLigatures": null,
+  "liveSassCompile.settings.showOutputWindowOn": "Error",
+  "liveSassCompile.settings.watchOnLaunch": true,
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",
@@ -128,5 +130,4 @@
   },
   "security.workspace.trust.untrustedFiles": "open",
   "window.zoomLevel": -1,
-  "liveSassCompile.settings.showOutputWindowOn": "Error"
 }
