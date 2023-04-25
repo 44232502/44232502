@@ -13,7 +13,7 @@
       "id": "commitMessage",
       "type": "promptString",
       "description": "Enter commit message",
-      "default": "Default commit message"
+      "default": "ㅤ"
     }
   ]
 }
