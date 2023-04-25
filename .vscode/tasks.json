@@ -4,7 +4,7 @@
       {
           "label": "Git Commands",
           "type": "shell",
-          "command": "git add -A; git commit --allow-empty-message -m ''''; git push; git pull"
+          "command": "git add -A; git commit --allow-empty-message -m '　'; git push; git pull"
       }
   ]
 }
