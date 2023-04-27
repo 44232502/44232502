@@ -1,0 +1,586 @@
+{
+	// Place your snippets for scss here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"center-center": {
+    "prefix": "cc",
+    "body": [
+      "content: '';",
+      "position: absolute;",
+			"top: 50%;",
+			"left: 50%;",
+			"transform: translate(-50%,-50%);",
+      "width: $1;",
+      "height: $2;",
+			"background: url($3) no-repeat center / cover$4;",
+    ],
+    "description": "上下左右中央"
+  },
+	"center-top": {
+    "prefix": "ct",
+    "body": [
+      "content: '';",
+      "position: absolute;",
+			"top: 0;",
+			"left: 50%;",
+			"transform: translateX(-50%);",
+			"width: $1;",
+      "height: $2;",
+			"background: url($3) no-repeat center / cover$4;",
+    ],
+    "description": "上寄せ左右中央"
+  },
+	"center-btm": {
+    "prefix": "cnb",
+    "body": [
+      "content: '';",
+      "position: absolute;",
+			"bottom: 0;",
+			"left: 50%;",
+			"transform: translateX(-50%);",
+			"width: $1;",
+      "height: $2;",
+			"background: url($3) no-repeat center / cover$4;",
+    ],
+    "description": "下寄せ左右中央"
+  },
+	"center-left": {
+    "prefix": "cl",
+    "body": [
+      "content: '';",
+      "position: absolute;",
+			"top: 50%;",
+			"left: 0;",
+			"transform: translateY(-50%);",
+			"width: $1;",
+      "height: $2;",
+			"background: url($3) no-repeat center / cover$4;",
+    ],
+    "description": "左寄せ上下中央"
+  },
+	"center-right": {
+    "prefix": "cr",
+    "body": [
+      "content: '';",
+      "position: absolute;",
+			"top: 50%;",
+			"right: 0;",
+			"transform: translateY(-50%);",
+			"width: $1;",
+      "height: $2;",
+			"background: url($3) no-repeat center / cover$4;",
+    ],
+    "description": "右寄せ上下中央"
+  },
+  "&::before": {
+    "prefix": "&::before",
+    "body": [
+			"&::before {$1}",
+    ],
+    "description": "&::before"
+  },
+  "&::after": {
+    "prefix": "&::after",
+    "body": [
+			"&::after {$1}",
+    ],
+    "description": "&::after"
+  },
+  "&::before,&::after": {
+    "prefix": "&::before,&::after",
+    "body": [
+			"&::before,&::after {",
+			// "  content: '';",
+			// "  position: absolute;",
+			// "  top: 50%;",
+			// "  left: 50%;",
+			// "  transform: translate(-50%,-50%);",
+			// "  width: px;",
+			// "  height: $1px;",
+			// "  background: url() no-repeat center / cover;",
+			"  $1",
+			"}",
+    ],
+    "description": "&::before,&::after"
+  },
+	"margin: auto;": {
+    "prefix": "ma",
+    "body": [
+			"margin: $1auto;",
+    ],
+    "description": "margin: auto;"
+  },
+	"font-size: ;": {
+    "prefix": "font-size: ;",
+    "body": [
+			"font-size: $1;",
+    ],
+    "description": "font-size: ;"
+  },
+	"padding: ;": {
+    "prefix": "padding: ;",
+    "body": [
+			"padding: $1;",
+    ],
+    "description": "padding: ;"
+  },
+	"flex-direction: column;": {
+    "prefix": "flex-direction: column;",
+    "body": [
+			"flex-direction: column;",
+    ],
+    "description": "flex-direction: column;"
+  },
+	"flex-direction: row;": {
+    "prefix": "flex-direction: row;",
+    "body": [
+			"flex-direction: row;",
+    ],
+    "description": "flex-direction: row;"
+  },
+	"dggtc": {
+    "prefix": "dggtc",
+    "body": [
+			"display: grid",
+			"gap: ;",
+      "@include mq(min_pc){",
+        "gap: ;",
+        "grid-template-columns: fr fr;",
+      "}",
+    ],
+    "description": "display: grid;@gtc-c"
+  },
+	"@include mq()": {
+    "prefix": "@include mq()",
+    "body": [
+			"@include mq(${1:min_pc}){$2}",
+    ],
+    "description": "@include mq()"
+  },
+  "@include mq(max_sp)": {
+    "prefix": "@include mq(max_sp)",
+    "body": [
+			"@include mq(${1:max_sp}){$2}",
+    ],
+    "description": "@include mq(max_sp)"
+  },
+  "@include mq(max_tab)": {
+    "prefix": "@include mq(max_tab)",
+    "body": [
+			"@include mq(${1:max_tab}){$2}",
+    ],
+    "description": "@include mq(max_tab)"
+  },
+  "@include mq(min_tab)": {
+    "prefix": "@include mq(min_tab)",
+    "body": [
+			"@include mq(${1:min_tab}){$2}",
+    ],
+    "description": "@include mq(min_tab)"
+  },
+  "@include mq(max_pc)": {
+    "prefix": "@include mq(max_pc)",
+    "body": [
+			"@include mq(${1:max_pc}){$2}",
+    ],
+    "description": "@include mq(max_pc)"
+  },
+  "@include mq(min_pc)": {
+    "prefix": "@include mq(min_pc)",
+    "body": [
+			"@include mq(${1:min_pc}){$2}",
+    ],
+    "description": "@include mq(min_pc)"
+  },
+  "@include mq(max_mpc)": {
+    "prefix": "@include mq(max_mpc)",
+    "body": [
+			"@include mq(${1:max_mpc}){$2}",
+    ],
+    "description": "@include mq(max_mpc)"
+  },
+  "@include mq(min_mpc)": {
+    "prefix": "@include mq(min_mpc)",
+    "body": [
+			"@include mq(${1:min_mpc}){$2}",
+    ],
+    "description": "@include mq(min_mpc)"
+  },
+  "@include mq(max_lpc)": {
+    "prefix": "@include mq(max_lpc)",
+    "body": [
+			"@include mq(${1:max_lpc}){$2}",
+    ],
+    "description": "@include mq(max_lpc)"
+  },
+  "@include mq(min_lpc)": {
+    "prefix": "@include mq(min_lpc)",
+    "body": [
+			"@include mq(${1:min_lpc}){$2}",
+    ],
+    "description": "@include mq(min_lpc)"
+  },
+  "@include mq(max_xlpc)": {
+    "prefix": "@include mq(max_xlpc)",
+    "body": [
+			"@include mq(${1:max_xlpc}){$2}",
+    ],
+    "description": "@include mq(max_xlpc)"
+  },
+  "@include mq(min_xlpc)": {
+    "prefix": "@include mq(min_xlpc)",
+    "body": [
+			"@include mq(${1:min_xlpc}){$2}",
+    ],
+    "description": "@include mq(min_xlpc)"
+  },
+
+	"@include mq(tab)": {
+    "prefix": "@include mq(tab)",
+    "body": [
+			"@include mq(${1:tab}){$2}",
+    ],
+    "description": "@include mq(tab)"
+  },
+	"@include mq(menu_sp)": {
+    "prefix": "@include mq(menu_sp)",
+    "body": [
+			"@include mq(${1:menu_sp}){$2}",
+    ],
+    "description": "@include mq(menu_sp)"
+  },
+	"@include mq(menu_tab)": {
+    "prefix": "@include mq(menu_tab)",
+    "body": [
+			"@include mq(${1:menu_tab}){$2}",
+    ],
+    "description": "@include mq(menu_tab)"
+  },
+	"@include mq(menu_pc)": {
+    "prefix": "aaaa@include mq(menu_pc)aaa",
+    "body": [
+			"@include mq(${1:menu_pc}){$2}",
+    ],
+    "description": "@include mq(menu_pc)"
+  },
+	"@media screen and (min-width:****px)": {
+    "prefix": "@media screen and (min-width:****px)",
+    "body": [
+			"@media screen and (min-width:${1:960}px) {$2}",
+    ],
+    "description": "@include mq()"
+  },
+	"@media screen and (min-width:**px) and ( max-width:****px)": {
+    "prefix": "@media screen and (min-width:**px) and ( max-width:****px)",
+    "body": [
+			"@media screen and (min-width:${1:960}px) and ( max-width:${2:1024}px) {$3}",
+    ],
+    "description": "@include mq()"
+  },
+  "$color_": {
+    "prefix": "c",
+    "body": [
+			"\\$color_",
+    ],
+    "description": "\\$color_"
+  },
+  "color: $color_white": {
+    "prefix": "cw",
+    "body": [
+			"color: \\$color_white;",
+    ],
+    "description": "color: \\$color_white;"
+  },
+  "background: $color_white": {
+    "prefix": "cww",
+    "body": [
+			"background: \\$color_white;",
+    ],
+    "description": "background: \\$color_white;"
+  },
+  "$color_white": {
+    "prefix": "cwww",
+    "body": [
+			"$color_white",
+    ],
+    "description": "$color_white"
+  },
+  "color: $color_black": {
+    "prefix": "cb",
+    "body": [
+			"color: \\$color_black;",
+    ],
+    "description": "color: \\$color_black;"
+  },
+  "background: $color_black": {
+    "prefix": "cbb",
+    "body": [
+			"background: \\$color_black;",
+    ],
+    "description": "background: \\$color_black;"
+  },
+  "$color_black": {
+    "prefix": "cbbb",
+    "body": [
+			"$color_black",
+    ],
+    "description": "$color_black"
+  },
+  "color: $color_border": {
+    "prefix": "cbd",
+    "body": [
+			"color: \\$color_border;",
+    ],
+    "description": "color: \\$color_border;"
+  },
+  "background: $color_border": {
+    "prefix": "cbdd",
+    "body": [
+			"background: \\$color_border;",
+    ],
+    "description": "background: \\$color_border;"
+  },
+  "$color_border": {
+    "prefix": "cbddd",
+    "body": [
+			"$color_border",
+    ],
+    "description": "$color_border"
+  },
+  "color: $color_gray": {
+    "prefix": "cg",
+    "body": [
+			"color: \\$color_gray;",
+    ],
+    "description": "color: \\$color_gray;"
+  },
+  "background: $color_gray": {
+    "prefix": "cgg",
+    "body": [
+			"background: \\$color_gray;",
+    ],
+    "description": "background: \\$color_gray;"
+  },
+  "$color_gray": {
+    "prefix": "cggg",
+    "body": [
+			"$color_gray",
+    ],
+    "description": "$color_gray"
+  },
+  "color: $color_main": {
+    "prefix": "cm",
+    "body": [
+			"color: \\$color_main;",
+    ],
+    "description": "color: \\$color_main;"
+  },
+  "background: $color_main": {
+    "prefix": "cmm",
+    "body": [
+			"background: \\$color_main;",
+    ],
+    "description": "background: \\$color_main;"
+  },
+  "$color_main": {
+    "prefix": "cmmm",
+    "body": [
+			"$color_main",
+    ],
+    "description": "$color_main"
+  },
+  "color: $color_accent": {
+    "prefix": "ca",
+    "body": [
+			"color: \\$color_accent;",
+    ],
+    "description": "color: \\$color_accent;"
+  },
+  "background: $color_accent": {
+    "prefix": "caa",
+    "body": [
+			"background: \\$color_accent;",
+    ],
+    "description": "background: \\$color_accent;"
+  },
+  "$color_accent": {
+    "prefix": "caaa",
+    "body": [
+			"$color_accent",
+    ],
+    "description": "$color_accent"
+  },
+  "$swiper": {
+    "prefix": "SSS",
+    "body": [
+      "// ～～～～～～～～～～～～",
+      "/* Swiperの設定",
+      "------------------------------------- */",
+      ".swiper-pagination-line {",
+      "  bottom: 0;",
+      "  left: 0;",
+      "  right: 0;",
+      "  margin: auto;",
+      "  position: absolute;",
+      "  text-align: center;",
+      "  transition: .3s opacity;",
+      "  transform: translate3d(0,0,0);",
+      "  z-index: 10;",
+      "}",
+      ".swiper-button-prev,",
+      ".swiper-button-next {",
+      "  filter: drop-shadow(0px 0px 5px rgba(34, 34, 34, 0.75));",
+      "}",
+      "",
+      "$swiper_line_pb: 2rem;",
+      "@include mq(min_l){",
+      "  $swiper_line_pb: 4rem;",
+      "}",
+      ".line-nav.swiper-button-prev,",
+      ".line-nav.swiper-button-next {",
+      "  margin-top: 0!important;",
+      "  height: 100%;",
+      "  top: 0;",
+      "  &::after {",
+      "      padding: 0 1rem;",
+      "      font-size: 1.5rem;",
+      "      color: $color_white;",
+      "      display: grid;",
+      "      height: 100%;",
+      "      place-items: center;",
+      "  }",
+      "}",
+      ".swiper-pagination-line {",
+      "  display: flex;",
+      "  align-items: flex-end;",
+      "  justify-content: center;",
+      "  width: 100%;",
+      "  width: calc(100% - 2rem);",
+      "  margin-left: auto;",
+      "  margin-right: auto;",
+      "  bottom: 1rem;",
+      "  gap: 4px;",
+      "  @include mq(min_l){",
+      "    gap: 8px;",
+      "    max-width: 1071px;",
+      "    bottom: 2.333rem;",
+      "  }",
+      "}",
+      ".swiper-pagination-line .swiper-pagination-bullet {",
+      "  width: 1.5rem;",
+      "  height: 2rem;",
+      "  border-bottom: 2px solid #E0E0E0;",
+      "  border-radius: 0;",
+      "  background: transparent;",
+      "  &:not(:first-of-type) {",
+      "      margin-left: 0;",
+      "  }",
+      "  &.swiper-pagination-bullet-active {",
+      "      border-bottom: 2px solid $color_white;",
+      "  }",
+      "  @include mq(min_l) {",
+      "    width: 2.777rem;",
+      "    height: 2rem;",
+      "    border-bottom: 3px solid #E0E0E0;",
+      "    &:not(:first-of-type) {",
+      "        margin-left: 0;",
+      "    }",
+      "  }",
+      "}",
+      ".swiper-pagination-bullet {",
+      "  opacity: 1!important;",
+      "}",
+      "",
+      ".＊＊＊__container {",
+      "  max-width: none;",
+      "  width: 100%;",
+      "  overflow: hidden;",
+      "}",
+      ".＊＊＊_swiper__wrap {",
+      "  position: relative;",
+      "}",
+      ".＊＊＊__column {",
+      "}",
+      ".＊＊＊_swiper__item {",
+      "  height: auto;",
+      "  overflow: hidden;",
+      "  padding: 20px;",
+      "  @include mq(max_l) {",
+      "      position: relative;",
+      "  }",
+      "  @include mq(min_l) {",
+      "      display: flex;",
+      "      align-items: flex-start;",
+      "      flex-direction: row-reverse;",
+      "      flex-direction: column;",
+      "  }",
+      "}",
+      ".＊＊＊_swiper__img {",
+      "  width: 100%;",
+      "}",
+      ".＊＊＊_swiper__wrap .swiper-button-prev {",
+      "  @include mq(min_l) {",
+      "      left: 20%;",
+      "  }",
+      "}",
+      ".＊＊＊_swiper__wrap .swiper-button-next {",
+      "  @include mq(min_l) {",
+      "      right: 20%;",
+      "  }",
+      "}"
+    ],
+    "description": "swiper"
+  },
+  "comentOut1": {
+    "prefix": "//1",
+    "body": [
+        "/* =============================================",
+        " $1",
+        "============================================= */"
+    ],
+    "description": "大見出し（コンパイル後残る）"
+  },
+  "comentOut2": {
+    "prefix": "//2",
+    "body": [
+        "/* $1",
+        "// ====================================================*/"
+    ],
+    "description": "中見出し（コンパイル後残る）"
+  },
+  "comentOut1l": {
+    "prefix": "//1",
+    "body": [
+        "// =============================================",
+        "// $1",
+        "// ============================================="
+    ],
+    "description": "大見出し（コンパイル後残らない）"
+  },
+  "comentOut2l": {
+    "prefix": "//2",
+    "body": [
+        "// $1",
+        "// ===================================================="
+    ],
+    "description": "中見出し（コンパイル後残らない）"
+  },
+  "eximg": {
+    "prefix": "eximg",
+    "body": [
+        "// ![image](ex/$1.jpg)",
+    ],
+    "description": "参考画像の挿入"
+  },
+}

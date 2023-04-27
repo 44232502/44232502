@@ -1,0 +1,167 @@
+{
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+  "?": {
+    "prefix": "?",
+    "body": [
+      "<?php $1 ?>"
+    ],
+    "description": "<?php?>"
+  },
+  "is_singular( array('item') )": {
+    "prefix": "is_singular( )",
+    "body": [
+      "is_singular( array('item') )"
+    ],
+    "description": "is_singular( array('item') )"
+  },
+
+
+  "swiper": {
+    "prefix": "SSS",
+    "body": [
+        "<!-- [START]$1 -->",
+        "<div class='＊＊＊$2_swiper__wrap'>",
+        "  <div class='swiper-container ＊＊＊$2_swiper'>",
+        "    <ul class='swiper-wrapper ＊＊＊$2__column ＊＊＊$2_list'>",
+        "      <li class='swiper-slide ＊＊＊$2_swiper__item animTarget'>",
+        "        <div class='＊＊＊$2_item'>",
+        "          <a href='' class='＊＊＊$2_link'>",
+        "",
+        "          </a>",
+        "        </div>",
+        "      </li>",
+        "    </ul>",
+        "  </div>",
+        "</div>",
+        "<!-- [END]$1 -->",
+    ],
+    "description": "swiper"
+  },
+  // "getField": {
+  //   "prefix": "cf",
+  //   "body": [
+  //       "<!-- [START]$1 -->",
+  //       "<?php if (get_field('$2')) : ?>",
+  //       "<?php the_field('$2'); ?>",
+  //       "<?php endif; ?>",
+  //       "<!-- [END]$1 -->"
+  //   ],
+  //   "description": "カスタム投稿の取得と出力"
+  // },
+  "fld": {
+    "prefix": "fld",
+    "body": [
+        "<!-- [START]$1 -->",
+        "<ul class='＊＊＊_list'>",
+        "  <?php",
+        "    \\$args = array(",
+        "        'post_type'      => 'slug＊＊＊',",
+        "        'posts_per_page' => 9,",
+        "    );",
+        "    \\$slug＊＊＊ = new WP_Query( \\$args );",
+        "    if(\\$slug＊＊＊->have_posts()): while(\\$slug＊＊＊->have_posts()): \\$slug＊＊＊->the_post();",
+        "  ?>",
+        "  <?php",
+        "    \\$page_id = get_page_by_path('slug＊＊＊');",
+        "    \\$page_id = \\$page_id->ID;",
+        "    // \\$term      = wp_get_object_terms(\\$post->ID,'cat_＊＊＊'); //指定されたタクソノミーのタームを取得",
+        "    // \\$term_name = \\$term[0]->name; //ターム名",
+        "    // \\$term_slug = \\$term[0]->slug; //タームのスラッグ",
+        "",
+        "    \\$fld＊＊＊01 = get_field('fld＊＊＊01', \\$page_id);",
+        "    \\$fld＊＊＊02 = get_field('fld＊＊＊02', \\$page_id);",
+        "",
+        "    \\$repeat = get_field('repeat', \\$page_id);",
+        "      \\$child01 = \\$repeat['child01'];",
+        "      \\$child02 = \\$repeat['child02'];",
+        "  ?>",
+        "  <li class=''>",
+        "    <div class=''>",
+        "      <a href='<?php the_permalink(); ?>' class=''>",
+        "",
+        "        <?php echo \\$fld＊＊＊01; ?>",
+        "        <?php echo \\$fld＊＊＊02; ?>",
+        "",
+        "        <ul class='＊＊＊_child_list'>",
+        "          <?php if(!empty(\\$child01)):?>",
+        "            <?php echo \\$child01;?>",
+        "          <?php endif;?>",
+        "          <?php if(!empty(\\$child02)):?>",
+        "            <?php echo \\$child02;?>",
+        "          <?php endif;?>",
+        "        </ul>",
+        "      </a>",
+        "    </div>",
+        "  </li>",
+        "  <?php endwhile; endif; wp_reset_postdata(); ?>",
+        "</ul>",
+        "<!-- [END]$1 -->"
+    ],
+    "description": "トップページのカスタムフィールドの取得と出力"
+  },
+  "fld": {
+    "prefix": "fld",
+    "body": [
+        "<!-- [START]$1 -->",
+        "<ul class='＊＊＊_list'>",
+        "<?php if(have_rows('＊＊＊')): ?>",
+        "<?php while(have_rows('＊＊＊')): the_row(); ?>",
+        "  <li class=''>",
+        "    <?php the_sub_field('＊＊＊_ttl'); ?>",
+        "    <?php the_sub_field('＊＊＊_content'); ?>",
+        "  </li>",
+        "<?php endwhile; ?>",
+        "<?php endif; ?>",
+        "</ul>",
+        "<!-- [END]$1 -->"
+    ],
+    "description": "カスタムフィールドの取得と出力"
+  },
+  "noimage": {
+    "prefix": "noimage",
+    "body": [
+      "<figure class='$1_img'>",
+      "  <?php if(has_post_thumbnail()): ?>",
+      "    <?php the_post_thumbnail(); ?>",
+      "  <?php else: ?>",
+      "    <img src='<?php echo get_theme_file_uri(); ?>/img/common/noimage.png' alt=''>",
+      "  <?php endif; ?>",
+      "</figure>",
+    ],
+    "description": "サムネイル"
+  },
+  // "imgex": {
+  //   "prefix": "imgex",
+  //   "body": [
+  //     "<!-- ![image](ex/$1.jpg) -->",
+  //   ],
+  //   "description": "参考画像の挿入"
+  // },
+    "?param": {
+    "prefix": "?param",
+    "body": [
+      "<?php \\$url = \\$_SERVER['REQUEST_URI']; ?>",
+      "<?php if(strstr(\\$url,'?test')): ?>",
+        "//パラメータが ?test の場合の表示内容",
+      "<?php else: ?>",
+        "//上記以外の内容（パラメータなしも含む））",
+      "<?php endif; ?>",
+    ],
+    "description": "パラメータで条件分岐"
+  },
+
+
+}
