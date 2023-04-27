@@ -22,6 +22,7 @@
   "editor.insertSpaces": true,
   "editor.trimAutoWhitespace": false,
   "editor.accessibilitySupport": "off",
+  "editor.parameterHints": true,
   "emmet.includeLanguages": {
     "html-hubl": "html",
     "css-hubl": "css"
@@ -131,4 +132,6 @@
   },
   "security.workspace.trust.untrustedFiles": "open",
   "window.zoomLevel": -1,
+  "window.enableMenuBarMnemonics": true,
+  "window.commandCenter": false,
 }
