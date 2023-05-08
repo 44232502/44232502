@@ -152,7 +152,7 @@
 	"dggtc": {
     "prefix": "dggtc",
     "body": [
-			"display: grid",
+			"display: grid;",
 			"gap: ;",
       "@include mq(min_pc){",
         "gap: ;",
@@ -169,77 +169,77 @@
     "description": "@include mq()"
   },
   "@include mq(max_sp)": {
-    "prefix": "@include mq(max_sp)",
+    "prefix": "@>max_sp",
     "body": [
 			"@include mq(${1:max_sp}){$2}",
     ],
     "description": "@include mq(max_sp)"
   },
   "@include mq(max_tab)": {
-    "prefix": "@include mq(max_tab)",
+    "prefix": "@>tab",
     "body": [
 			"@include mq(${1:max_tab}){$2}",
     ],
     "description": "@include mq(max_tab)"
   },
   "@include mq(min_tab)": {
-    "prefix": "@include mq(min_tab)",
+    "prefix": "@<tab",
     "body": [
 			"@include mq(${1:min_tab}){$2}",
     ],
     "description": "@include mq(min_tab)"
   },
   "@include mq(max_pc)": {
-    "prefix": "@include mq(max_pc)",
+    "prefix": "@>pc",
     "body": [
 			"@include mq(${1:max_pc}){$2}",
     ],
     "description": "@include mq(max_pc)"
   },
   "@include mq(min_pc)": {
-    "prefix": "@include mq(min_pc)",
+    "prefix": "@<pc",
     "body": [
 			"@include mq(${1:min_pc}){$2}",
     ],
     "description": "@include mq(min_pc)"
   },
   "@include mq(max_mpc)": {
-    "prefix": "@include mq(max_mpc)",
+    "prefix": "@>mpc",
     "body": [
 			"@include mq(${1:max_mpc}){$2}",
     ],
     "description": "@include mq(max_mpc)"
   },
   "@include mq(min_mpc)": {
-    "prefix": "@include mq(min_mpc)",
+    "prefix": "@<mpc",
     "body": [
 			"@include mq(${1:min_mpc}){$2}",
     ],
     "description": "@include mq(min_mpc)"
   },
   "@include mq(max_lpc)": {
-    "prefix": "@include mq(max_lpc)",
+    "prefix": "@>lpc",
     "body": [
 			"@include mq(${1:max_lpc}){$2}",
     ],
     "description": "@include mq(max_lpc)"
   },
   "@include mq(min_lpc)": {
-    "prefix": "@include mq(min_lpc)",
+    "prefix": "@<lpc",
     "body": [
 			"@include mq(${1:min_lpc}){$2}",
     ],
     "description": "@include mq(min_lpc)"
   },
   "@include mq(max_xlpc)": {
-    "prefix": "@include mq(max_xlpc)",
+    "prefix": "@>xlpc",
     "body": [
 			"@include mq(${1:max_xlpc}){$2}",
     ],
     "description": "@include mq(max_xlpc)"
   },
   "@include mq(min_xlpc)": {
-    "prefix": "@include mq(min_xlpc)",
+    "prefix": "@<xlpc",
     "body": [
 			"@include mq(${1:min_xlpc}){$2}",
     ],
@@ -247,33 +247,37 @@
   },
 
 	"@include mq(tab)": {
-    "prefix": "@include mq(tab)",
+    "prefix": "@tab",
     "body": [
 			"@include mq(${1:tab}){$2}",
     ],
     "description": "@include mq(tab)"
   },
 	"@include mq(menu_sp)": {
-    "prefix": "@include mq(menu_sp)",
+    "prefix": "@menu_sp",
     "body": [
 			"@include mq(${1:menu_sp}){$2}",
     ],
     "description": "@include mq(menu_sp)"
   },
 	"@include mq(menu_tab)": {
-    "prefix": "@include mq(menu_tab)",
+    "prefix": "@menu_tab",
     "body": [
 			"@include mq(${1:menu_tab}){$2}",
     ],
     "description": "@include mq(menu_tab)"
   },
 	"@include mq(menu_pc)": {
-    "prefix": "aaaa@include mq(menu_pc)aaa",
+    "prefix": "@menu_pc",
     "body": [
 			"@include mq(${1:menu_pc}){$2}",
     ],
     "description": "@include mq(menu_pc)"
   },
+  //
+  //
+  //
+  //
 	"@media screen and (min-width:****px)": {
     "prefix": "@media screen and (min-width:****px)",
     "body": [
@@ -281,10 +285,20 @@
     ],
     "description": "@include mq()"
   },
-	"@media screen and (min-width:**px) and ( max-width:****px)": {
+	"@media screen and (min-width:**px) and (max-width:****px)": {
     "prefix": "@media screen and (min-width:**px) and ( max-width:****px)",
     "body": [
 			"@media screen and (min-width:${1:960}px) and ( max-width:${2:1024}px) {$3}",
+    ],
+    "description": "@include mq()"
+  },
+	"@media screen and (orientation: portrait) ": {
+    "prefix": "@tate",
+    "body": [
+			"@media screen and (orientation: portrait) {",
+			"  //縦長の場合",
+			"  $1",
+			"}",
     ],
     "description": "@include mq()"
   },
@@ -398,7 +412,7 @@
     "body": [
 			"$color_main",
     ],
-    "description": "$color_main"
+    "description": "\\$color_main"
   },
   "color: $color_accent": {
     "prefix": "ca",
