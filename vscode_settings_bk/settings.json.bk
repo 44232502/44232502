@@ -134,7 +134,13 @@
   "window.zoomLevel": -1,
   "window.enableMenuBarMnemonics": true,
   "window.commandCenter": false,
-  "csscomb.ignoreFilesOnSave": [],
+  // --------CSScomb -------------
+  // 保存時に自動でフォーマットしないようにする場合は "false" に
   "csscomb.formatOnSave": true,
-  "csscomb.syntaxAssociations": {},
+  // csscomb.json ファイルの設置している場所のパスを指定 私は .vscode　フォルダ直下にファイルを設置したので以下のようになりました。
+  "csscomb.preset": "~/.vscode/csscomb.json",
+  // SCSS でも利用する場合はこちらを記述する  ","が最後に必要な場合は忘れずに
+  "csscomb.syntaxAssociations": {
+  "postcss": "scss"
+  }
 }
