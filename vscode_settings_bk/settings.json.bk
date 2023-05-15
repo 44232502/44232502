@@ -134,4 +134,7 @@
   "window.zoomLevel": -1,
   "window.enableMenuBarMnemonics": true,
   "window.commandCenter": false,
+  "csscomb.ignoreFilesOnSave": [],
+  "csscomb.formatOnSave": true,
+  "csscomb.syntaxAssociations": {},
 }
