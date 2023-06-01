@@ -326,7 +326,7 @@
   "$color_white": {
     "prefix": "cwww",
     "body": [
-			"$color_white",
+			"\\$color_white",
     ],
     "description": "$color_white"
   },
@@ -347,7 +347,7 @@
   "$color_black": {
     "prefix": "cbbb",
     "body": [
-			"$color_black",
+			"\\$color_black",
     ],
     "description": "$color_black"
   },
@@ -368,7 +368,7 @@
   "$color_border": {
     "prefix": "cbddd",
     "body": [
-			"$color_border",
+			"\\$color_border",
     ],
     "description": "$color_border"
   },
@@ -389,7 +389,7 @@
   "$color_gray": {
     "prefix": "cggg",
     "body": [
-			"$color_gray",
+			"\\$color_gray",
     ],
     "description": "$color_gray"
   },
@@ -410,7 +410,7 @@
   "$color_main": {
     "prefix": "cmmm",
     "body": [
-			"$color_main",
+			"\\$color_main",
     ],
     "description": "\\$color_main"
   },
@@ -431,7 +431,7 @@
   "$color_accent": {
     "prefix": "caaa",
     "body": [
-			"$color_accent",
+			"\\$color_accent",
     ],
     "description": "$color_accent"
   },
