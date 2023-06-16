@@ -53,6 +53,7 @@
       "plase-content",
       "place-items",
       "place-self",
+      "place-content",
       "order",
       "visibility",
       "opacity",
@@ -134,6 +135,7 @@
       "background-attachment",
       "background-color",
       "background-blend-mode",
+      "object-fit",
       "mask-image",
       "mask-origin",
       "mask-position",
@@ -199,6 +201,7 @@
       "filter",
       "widows",
       "orphans",
+      "pointer-events",
       "$include mq"
     ]
   ]
