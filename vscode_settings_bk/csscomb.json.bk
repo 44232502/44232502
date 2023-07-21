@@ -84,6 +84,7 @@
       "margin-right",
       "margin-bottom",
       "margin-left",
+      "margin-inline",
       "padding",
       "padding-top",
       "padding-right",
