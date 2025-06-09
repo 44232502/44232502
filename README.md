@@ -4,10 +4,10 @@
 </p>
 
 
-
-
-<!-- リポジトリステータス -->
-[![hogehoge's github stats](https://github-readme-stats.vercel.app/api?username=44232502&hide=contribs&count_private=true&show_icons=true&theme=merko)](https://github.com/44232502/)
-
-<!-- ソースコード統計 -->
-[![Top used Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=44232502&layout=compact&theme=merko)](https://github.com/44232502/)
+<div aline="center">
+  <!-- リポジトリステータス -->
+  [![hogehoge's github stats](https://github-readme-stats.vercel.app/api?username=44232502&hide=contribs&count_private=true&show_icons=true&theme=merko)](https://github.com/44232502/)
+  
+  <!-- ソースコード統計 -->
+  [![Top used Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=44232502&layout=compact&theme=merko)](https://github.com/44232502/)  
+</div>
