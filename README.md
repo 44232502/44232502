@@ -4,10 +4,22 @@
 </p>
 
 
-<div aline="center">
-  <!-- リポジトリステータス -->
-  [![hogehoge's github stats](https://github-readme-stats.vercel.app/api?username=44232502&hide=contribs&count_private=true&show_icons=true&theme=merko)](https://github.com/44232502/)
+<div align="center">
+  <picture>
+      <source
+        srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=44232502&show_icons=true&theme=gruvbox"
+        media="(prefers-color-scheme: dark)"
+      />
+      <img src="https://github-readme-stats.vercel.app/top-langs?username=44232502&show_icons=true" />
+    </picture>
+</div>
   
-  <!-- ソースコード統計 -->
-  [![Top used Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=44232502&layout=compact&theme=merko)](https://github.com/44232502/)  
+<div align="center">
+  <picture>
+    <source
+      srcset="https://github-readme-stats.vercel.app/api?username=44232502&show_icons=true&theme=gruvbox"
+      media="(prefers-color-scheme: dark)"
+    />
+    <img src="https://github-readme-stats.vercel.app/api?username=44232502&show_icons=true" />
+  </picture>
 </div>
